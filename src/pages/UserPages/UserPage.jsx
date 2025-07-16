@@ -12,6 +12,7 @@ const UserPage = () => {
     priority: "Medium",
     deadline: "",
     progress: 0,
+    status: "incomplete",
   });
 
   useEffect(() => {
@@ -44,7 +45,7 @@ const UserPage = () => {
 
     toast.success("Task added successfully!", { icon: "✅" });
 
-    setNewTask({ title: "", description: "", priority: "Medium", deadline: "", progress: 0 });
+    setNewTask({ title: "", description: "", priority: "Medium", deadline: "", progress: 0, status: "incomplete" });
   };
 
   // Handle Task Deletion

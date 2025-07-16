@@ -151,10 +151,8 @@ const TaskList = () => {
     localStorage.setItem('tasks', JSON.stringify(updatedTasks));
     
     // Dispatch storage event for other components
-    window.dispatchEvent(new StorageEvent('storage', {
-      key: 'tasks',
-      newValue: JSON.stringify(updatedTasks)
-    }));
+    // Fix to manually triggers
+    window.dispatchEvent(new Event("tasks-updated"));
   };
 
   /**
