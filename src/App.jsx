@@ -101,8 +101,9 @@ function App() {
             <main className="flex-grow">
               <Routes>
                 {/* Public Routes */}
-                <Route path="/" element={<Landing />} />
+                <Route path="/" element={<Login />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/home" element={<Landing />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
@@ -216,7 +217,7 @@ function App() {
                 />
                 
                 {/* Fallback Route - Redirect to landing page */}
-                <Route path="*" element={<Navigate to="/" replace />} />
+                <Route path="*" element={<Navigate to="/home" replace />} />
               </Routes>
             </main>
             

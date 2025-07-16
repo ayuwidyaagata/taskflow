@@ -408,7 +408,7 @@ const Signup = () => {
           </Link>
           <div className="mt-2">
             <Link
-              to="/"
+              to="/home"
               className="text-gray-500 text-sm hover:underline"
             >
               Back to Home

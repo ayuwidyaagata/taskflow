@@ -89,7 +89,7 @@ const Navbar = () => {
     <nav className="bg-blue-600 text-white px-5 py-4 flex justify-between items-center shadow-lg">
       {/* Logo with Image & Text */}
       <Link
-        to="/"
+        to="/home"
         onClick={handleLogoClick}
         className="flex items-center text-3xl font-bold tracking-wide hover:opacity-70 transition"
       >
